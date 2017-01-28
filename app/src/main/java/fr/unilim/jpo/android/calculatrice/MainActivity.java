@@ -104,65 +104,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button0.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("0");
-            }
-        });
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("1");
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("2");
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("3");
-            }
-        });
-
-        button4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("4");
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("5");
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("6");
-            }
-        });
-
-        button7.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("7");
-            }
-        });
-
-        button8.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("8");
-            }
-        });
-
-        button9.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                chiffreClick("9");
-            }
-        });
     }
 
     //voici la méthode qui est exécutée lorsqu'on clique sur un bouton chiffre
@@ -246,28 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Voici la méthode qui fait le calcul qui a été demandé par l'utilisateur
     private void calcul() {
-        Double nombre1 = chiffre1;
-        Double nombre2 = getEcranValue();
-        Double resultat = 0.0;
-
-        if (operateur.equals("+"))
-            resultat = nombre1 + nombre2;
-
-        if (operateur.equals("-"))
-            resultat = nombre1 - nombre2;
-
-        if (operateur.equals("*"))
-            resultat = nombre1 * nombre2;
-
-        if (operateur.equals("/")) {
-            if(!nombre2.equals(0)) {
-                resultat = nombre1 / nombre2;
-            } else {
-                resultat = 0.0;
-            }
-        }
-
-        afficherResultat(resultat);
+       
     }
 
     // Affiche un nombre à l'écran
